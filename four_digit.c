@@ -18,6 +18,6 @@ int main()
     third = (number / 10) % 10 ;
     fourth = number % 10;
     answer = first + second + third + fourth ;
-  
+    // cout<<"the value of first "<<first;
     cout<<"The value of answer  is "<<answer;
 }
