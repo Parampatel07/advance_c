@@ -1,0 +1,25 @@
+// Write a C++ program to add 10 numbers using array
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+    int size = 0;
+    cout<<"Enter value of size \n";
+    cin>>size;
+    int numbers[size]; // 10
+    int count  = 0;
+    cout<<"Enter "<<size<<" numbers";
+    // 10
+    for(count = 0 ; count < size;count++)
+    {
+        cout<<"Enter numbers"<<count+1<<" ";
+        cin>>numbers[count];  
+    }
+    
+    for(count =0 ; count<size ; count++)
+    {
+        cout<<"\nNumber are "<<numbers[count];
+    }
+    
+}
