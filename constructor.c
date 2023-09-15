@@ -1,22 +1,31 @@
 #include<iostream>
-#include<conio.h>
 using namespace std;
-class rectangle
+
+class Rectangle
 {
-    int lenght ;
-    int width ;
     
+    private:
+    int lenght , width ;
     public:
-    rectangle()
+    Rectangle(int l , int w)
     {
-        cout<<"constructor called...";
-        lenght = 0 ;
-        width = 0 ;
+        lenght = l ;
+        width  =  w;
+    }
+    void print_rectangle()
+    {
+        cout<<"The value of lenght is "<<lenght;
+        cout<<" The value of width is "<<width;
+    }
+    void get_area()
+    {
+        int area = lenght * width ;
+        cout<<"\nThe value of area is "<<area;
     }
 };
-
-
 int main()
 {
-    rectangle r1;
+    Rectangle r1(10,20);
+    r1.print_rectangle();
+    r1.get_area();
 }
